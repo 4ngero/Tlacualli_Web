@@ -1,5 +1,5 @@
-@extends('layouts.Main')
-@section('Content')
+@extends('layouts.mainlayout')
+@section('content')
 
 
     <div id="logo">
