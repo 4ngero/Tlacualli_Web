@@ -1,0 +1,42 @@
+#navbar {
+    background-color: #6e8a4d;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+navbar .nav{
+    color: orange;
+}
+
+#imagen {
+    width: 50em;
+}
+
+body {
+    font-size: 1rem;
+}
+
+#descripcion {
+    width: 50%;
+}
+
+#boton{
+    border: 1em solid red;
+    border-radius: 20%;
+    margin: 5em 0em;
+    padding: 2em;
+}
+
+/*#titulos{
+    font-size: 1em ;
+    text-decoration: underline black; 
+    text-decoration: line-through black;
+}*/
+
+#archive{
+    width: 30%;
+}
+
+body{
+    font-size: 1em;
+}
