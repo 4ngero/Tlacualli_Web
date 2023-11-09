@@ -7,30 +7,33 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <title>Unete</title>
-    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}" >
 </head>
 <body>
-    <nav id="navbar">
-        <ul>
-            <li>
-                <a href="#">Inicio</a>
-            </li>
-            <li>
-                <a href="#contactUs">Contactanos</a>
-            </li>
-            <li>
-                <a href="#collab">Colaboradores</a>
-            </li>
-            <li>
-                <a href="#">Acerca de nosotros</a>
-            </li>
-            <li>
-                <a href="join">Unete</a>
-            </li>
-        </ul>
-    </nav>
-    @yield('content')
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">Inicio</a>
+                </li>
+                <li>
+                    <a href="#contactUs">Contactanos</a>
+                </li>
+                <li>
+                    <a href="#collab">Nuestros Colaboradores</a>
+                </li>
+                <li>
+                    <a href="#">Acerca de nosotros</a>
+                </li>
+                <li>
+                    <a href="join">Unete</a>
+                </li>
+            </ul>
+        </nav>
+        <!--Termina el nav--> 
+    </header>
+    @yield('contentHome')
     <footer>
         <center>
             <p>

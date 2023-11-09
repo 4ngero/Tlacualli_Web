@@ -1,21 +1,61 @@
 @extends('layouts.mainlayout')
-@section('content')
-
-
-    <div id="logo">
-        <img src="" alt="">
+@section('contentHome')
+<section class="sectionCarrusel">
+    <div class="slideshow-container">
+    <div class="mySlides fade">
+        <img id="carrusel" src="https://veracruz.uo.edu.mx/sites/default/files/Desarrollo-Sustentable.jpeg" >
+        <div id="presentacion">
+            Tlacualli
+        </div>
     </div>
-
-    <div id="Carusel_1">
-        <img src="https://veracruz.uo.edu.mx/sites/default/files/Desarrollo-Sustentable.jpeg" alt="" width="1500px">
+    
+    <div class="mySlides fade">
+        <img id="carrusel" src="https://lolmagazine.com.mx/wp-content/uploads/2020/12/Mercado-libre-lanza-categoria-Eco-Friendly.jpeg">
+        <div id="presentacion">
+            Tlacualli
+        </div>
     </div>
-
-    <div id="descripcion">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, blanditiis mollitia? Officia, laboriosam expedita dolor impedit animi nam id molestiae voluptatem repudiandae minus itaque voluptas aut excepturi exercitationem neque at?</p>
+    
+    <div class="mySlides fade">
+        <img id="carrusel" src="https://parabienoparamal.com/wp-content/uploads/2021/08/Te-mostramos-co%CC%81mo-hacer-composta-en-casa.jpeg">
+        <div id="presentacion">
+            Tlacualli
+        </div>
     </div>
+</div>
+<br>
+<div style="text-align:center">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+</section>
+<br>
+    <section class="principalContent">
+        <div>
+            <h1 class="title">La composta</h1>
+        </div>
+    </section>
 
-    <div id="Carusel_2">
-        <img src="https://lolmagazine.com.mx/wp-content/uploads/2020/12/Mercado-libre-lanza-categoria-Eco-Friendly.jpeg" alt="">
-    </div>
-
-    @stop
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+        </script>
+@endsection

@@ -1,0 +1,30 @@
+header{
+    display: block;
+    width: 60%;
+    background-color: aqua;
+}
+
+header nav{
+    text-align: right;
+    display: inline-block;
+    width: 60%;
+}
+header ul{
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+header ul li a{
+    text-decoration: none;
+    
+
+}
+
+/*header ul li a:hover{
+
+}*/

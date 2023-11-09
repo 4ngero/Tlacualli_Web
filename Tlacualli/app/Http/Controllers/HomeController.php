@@ -14,9 +14,9 @@ class HomeController extends Controller
     }
 
     
-    public function indexAction()
+    public function Home()
     {
-        return view('Home');
+        return view('home');
     }
 
 
