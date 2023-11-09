@@ -1,5 +1,5 @@
 @extends('layouts.mainlayout')
-@section('contentHome')
+@section('content')
 <section class="sectionCarrusel">
     <div class="slideshow-container">
     <div class="mySlides fade">

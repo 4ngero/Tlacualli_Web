@@ -13,6 +13,7 @@
 <body>
     <header>
         <nav>
+            <img class="logo" src="{{ asset('img/Tlacualli.png') }}" alt="">
             <ul>
                 <li>
                     <a href="#home">Inicio</a>
@@ -33,7 +34,7 @@
         </nav>
         <!--Termina el nav--> 
     </header>
-    @yield('contentHome')
+    @yield('content')
     <footer>
         <center>
             <p>

@@ -1,22 +1,36 @@
+/*Navbar*/
+*{
+  font-family: Century Gothic;
+}
 header{
   display: block;
   width: 100%;
+}
+
+nav{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),
+  rgba(0, 0, 0, 0.08));
+}
+.logo{
+  width: 15em;
+  position: absolute;
+  display: block;
+  padding: 0em 2em;
 }
 
 header nav{
   text-align: right;
   display: inline-block;
   width: 100%;
-  height: 5em;
+  height: 7em;
   z-index: 1;
   position: absolute;
-  right: 1em;
 }
 header ul{
   display: inline-block;
-  list-style-type: none;
+  list-style-type: none;  
   text-align: center;
-  padding: 1em 0em 1em 5em;
+  padding: 2em;
 }
 
 header ul li{
@@ -25,16 +39,38 @@ header ul li{
 
 header ul li a{
   text-decoration: none;
-  padding: 1em 1em;
-  color: black;
+  padding: .4em .4em;
+  color: white;
   font-family: Century Gothic;
-  font-size: large;
+  font-size: 1.5em;
 }
+/*Fin de navbar*/
+
+/*Carrusel*/
 .slideshow-container {
   width: 100%;
   position: relative;
   margin: none;
-  opacity: 85%;
+  opacity: 100%;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/*Animación de desvanecimiento*/
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*Relación de desvanecimiento*/
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
 
 #carrusel{
@@ -51,53 +87,7 @@ header ul li a{
   font-size: 10em;
   opacity: 1;
 }
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-/*#navbar{
-    background-color:#6E8A4D;
-    font-size: 25px !important;
-    font-weight: bold;
-}
-
-#navbar a{
-    color: red;
-}
-
-
-#Carusel_1 button{
-    margin: 5em 0em;
-    padding: 2em;
-    border: 0.3em solid red;
-    border-radius:20% ;
-    font-weight: bold;
-    font-size: 4em !important;
-    text-decoration: underline;
-    text-decoration: line-through;
-}
-
-#Carusel_1 img{
-    width: 50rem;
-}
-*/
-
+/*Fin de carrusel*/
 
 /*Inicio del estilo del Registro */
 .container{
@@ -143,7 +133,7 @@ header ul li a{
     color: #333;
   }
    
-  .register input:active,
+  .register input:active, 
   .register input:focus{
     outline: none;
   }
@@ -234,5 +224,21 @@ header ul li a{
   }
 
 /*Final del estilo del registro */
+
+/*Cuerpo de pagina*/
+.cuerpo{
+  padding-top: 7em;
+  display: flex;
+}
+
+.description{
+  width: 65em;
+  padding-right: 1em;
+}
+
+.archives{
+}
+
+/*Fin de cuerpo de página*/
 
 
