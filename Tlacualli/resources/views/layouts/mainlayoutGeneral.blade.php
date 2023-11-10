@@ -37,17 +37,17 @@
     @yield('content')
     <footer>
         <center>
-            <a id="socialNet" href="https://www.facebook.com/" target="blank">Facebook</a>
-            <a id="socialNet" href="https://www.instagram.com/" target="blank">Instagram</a>
-            <a id="socialNet" href="https://twitter.com/?lang=es" target="blank">Twitter</a>
+            <a id="socialNetGeneral" href="https://www.facebook.com/" target="blank">Facebook</a>
+            <a id="socialNetGeneral" href="https://www.instagram.com/" target="blank">Instagram</a>
+            <a id="socialNetGeneral" href="https://twitter.com/?lang=es" target="blank">Twitter</a>
             <br>
-            <p id="socialNet">
+            <p id="socialNetGeneral">
                 Todos los derechos resevados ®
             </p>
             <section id="contacto">
-                    <a id="socialNet" href="tel:4421352507" target="blank">Teléfono: 4421325207</a>
-                    <a id="socialNet" href=mailto:121037815@upq.edu.mx target="blank">Correo: 121037815@upq.edu.mx</a>
-                    <a id="socialNet" href="https://maps.app.goo.gl/VvmpG6XhcUXLYuEz7" target="blank">Nuestra Dirección</a>
+                    <a id="socialNetGeneral" href="tel:4421352507" target="blank">Teléfono: 4421325207</a>
+                    <a id="socialNetGeneral" href=mailto:121037815@upq.edu.mx target="blank">Correo: 121037815@upq.edu.mx</a>
+                    <a id="socialNetGeneral" href="https://maps.app.goo.gl/VvmpG6XhcUXLYuEz7" target="blank">Nuestra Dirección</a>
             </section>
         </center>
     </footer>

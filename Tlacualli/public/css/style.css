@@ -7,7 +7,7 @@ header{
   width: 100%;
 }
 
-nav{
+.navHome{
   background-image: linear-gradient(rgba(0, 0, 0, 0.8),
   rgba(0, 0, 0, 0.08));
 }
@@ -37,10 +37,18 @@ header ul li{
   display: inline-block;
 }
 
-header ul li a{
+.navHome ul li a{
   text-decoration: none;
   padding: .4em .4em;
   color: white;
+  font-family: Century Gothic;
+  font-size: 1.5em;
+}
+
+.navGeneral ul li a{
+  text-decoration: none;
+  padding: .4em .4em;
+  color: black ;
   font-family: Century Gothic;
   font-size: 1.5em;
 }
@@ -90,6 +98,9 @@ header ul li a{
 /*Fin de carrusel*/
 
 /*Inicio del estilo del Registro */
+.form-register{
+  padding-top: 3em;
+}
 .container{
     width: 100%;
     height: 100vh;
@@ -105,6 +116,7 @@ header ul li a{
     height: auto;
     background: #fff;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+    padding-bottom: 3em;
   }
    
   .register, .login{
@@ -222,23 +234,122 @@ header ul li a{
       transform: translateX(-50%) rotate(90deg);
     }
   }
-
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+}
 /*Final del estilo del registro */
 
-/*Cuerpo de pagina*/
+/*Cuerpo de home*/
 .cuerpo{
-  padding-top: 7em;
+  padding-left: 2em ;
+  padding-top: 10em;
   display: flex;
 }
 
 .description{
-  width: 65em;
-  padding-right: 1em;
-}
-
-.archives{
+  width: 63em;
+  padding-right: 2em;
 }
 
 /*Fin de cuerpo de página*/
 
+/*Acerca de*/
+.documentSection{
+  text-decoration: none;
+  color: #333;
+}
 
+.document{
+  list-style: none;
+}
+
+.document a{
+  text-decoration: none;
+  color: #1f3434;
+}
+
+
+/*Fin Acerca de*/
+
+/*Footer*/
+footer center #socialNet{
+  display: inline-block;
+  padding: 0em 1em 0em 1em;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+footer center #socialNetHome{
+  display: inline-block;
+  padding: 0em 1em 0em 1em ;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+footer center #socialNetGeneral{
+  display: inline-block;
+  padding: 0em 1em 0em 1em ;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+/*Fin Footer*/
+
+/*Home */
+.principalContent{
+  width: 60rem;
+  height: auto;
+  text-align: center;
+  margin-left: 11rem;
+}
+
+.principalContent p{
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-card {
+  border: none;
+  transition: transform 0.2s;
+  width: 350px; 
+  margin-bottom: 20px; 
+  padding: 10px;
+}
+
+.info-card:hover {
+  transform: scale(1.05);
+}
+
+.info-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3rem;
+}
+
+.info-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.info-card .card-text {
+  font-size: 1rem;
+  text-align: justify;
+}
+/*Fin Home*/
